@@ -1,0 +1,17 @@
+{{ define "main" }}
+  {{ if eq .Section "categories" }}
+    <h3>{{ title (T ("category")) }}: {{ lower .Title }}</h3>
+  {{ else if eq .Section "tags" }}
+    <h3>{{ title (T ("tag")) }}: {{ lower .Title }}</h3>
+  {{ else }}
+    <h3>{{ lower .Title }}</h3>
+  {{ end }}
+
+  {{ .Content }}
+
+  <ul>
+    {{ range .Pages }}
+      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    {{ end }}
+  </ul>
+{{ end }}

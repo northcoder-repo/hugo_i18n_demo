@@ -1,0 +1,28 @@
+title = 'Mein i18n Demo'
+languageName = 'Deutsch'
+contentDir = 'content/de'
+
+[permalinks]
+  [permalinks.section]
+    news = '/nachricht/'
+  [permalinks.page]
+    news = '/nachricht/:filename'
+
+[menus]
+  # I use the home page icon instead, in my demo
+  #[[menus.main]]
+  #  name = 'Startseite'
+  #  pageRef = '/de/'
+  #  weight = 10
+  [[menus.main]]
+    name = 'Nachricht'
+    pageRef = '/de/nachricht'
+    weight = 20
+  [[menus.main]]
+    name = 'Kategorien'
+    pageRef = '/de/categories'
+    weight = 30
+  [[menus.main]]
+    name = 'Tags'
+    pageRef = '/de/tags'
+    weight = 30

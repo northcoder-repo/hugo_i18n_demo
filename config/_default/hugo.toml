@@ -1,0 +1,6 @@
+baseURL = 'http://localhost:1313/'
+
+defaultContentLanguage = 'fr'
+defaultContentLanguageInSubdir = true
+
+removePathAccents = true

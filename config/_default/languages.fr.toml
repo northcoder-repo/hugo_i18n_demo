@@ -1,0 +1,28 @@
+title = 'Ma i18n Démo'
+languageName = 'français'
+contentDir = 'content/fr'
+
+[permalinks]
+  [permalinks.section]
+    news = '/nouvelles/'
+  [permalinks.page]
+    news = '/nouvelles/:filename'
+
+[menus]
+  # I use the home page icon instead, in my demo
+  #[[menus.main]]
+  #  name = "Page d'accueil"
+  #  pageRef = '/fr/'
+  #  weight = 10
+  [[menus.main]]
+    name = 'Nouvelles'
+    pageRef = '/fr/nouvelles'
+    weight = 20
+  [[menus.main]]
+    name = 'Catégories'
+    pageRef = '/fr/categories'
+    weight = 30
+  [[menus.main]]
+    name = 'Balises'
+    pageRef = '/fr/tags'
+    weight = 40

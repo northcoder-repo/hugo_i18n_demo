@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bekanntmachung on Mein i18n Demo</title>
+    <link>http://localhost:1313/de/categories/bekanntmachung/</link>
+    <description>Recent content in Bekanntmachung on Mein i18n Demo</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <lastBuildDate>Wed, 30 Oct 2024 05:00:33 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/de/categories/bekanntmachung/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zweite Ankündigung</title>
+      <link>http://localhost:1313/de/nachricht/ankundigung-2/</link>
+      <pubDate>Wed, 30 Oct 2024 05:00:33 -0400</pubDate>
+      <guid>http://localhost:1313/de/nachricht/ankundigung-2/</guid>
+      <description>&lt;p&gt;Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Neue Ankündigung</title>
+      <link>http://localhost:1313/de/nachricht/ankundigung/</link>
+      <pubDate>Tue, 29 Oct 2024 12:23:19 -0400</pubDate>
+      <guid>http://localhost:1313/de/nachricht/ankundigung/</guid>
+      <description>&lt;p&gt;Dies ist eine aufregende neue Ankündigung!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
