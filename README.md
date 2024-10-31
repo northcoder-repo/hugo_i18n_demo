@@ -2,7 +2,7 @@
 
 A basic demo using [Hugo](https://gohugo.io/) - the static website generation framework.
 
-In particular this is the simplest possible site I could build to take advantage of Hugo' [i18n](https://gohugo.io/content-management/multilingual/) support.
+In particular this is the simplest possible site I could build to take advantage of Hugo's [i18n](https://gohugo.io/content-management/multilingual/) support.
 
 It doesn't use any third party themes.
 
