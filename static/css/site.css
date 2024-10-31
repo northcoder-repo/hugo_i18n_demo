@@ -66,3 +66,9 @@ body {
 li:not(:last-child) {
     margin-bottom: 10px;
 }
+
+.no-translation {
+    color: white;
+    background-color: #f77777;
+    padding: 2px;
+}

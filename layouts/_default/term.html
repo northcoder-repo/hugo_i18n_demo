@@ -9,9 +9,6 @@
 
   {{ .Content }}
 
-  <ul>
-    {{ range .Pages }}
-      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-    {{ end }}
-  </ul>
+  {{ partial "page_list.html" . }}
+
 {{ end }}

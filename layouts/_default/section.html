@@ -1,12 +1,8 @@
 {{ define "main" }}
   <h3>{{ .Title }}</h3>
+
   {{ .Content }}
-  <ul>
-    {{ range .Pages }}
-      <li>
-          <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-          <span> - {{ .Date | time.Format ":date_medium" }}</span>
-      </li>
-    {{ end }}
-  </ul>
+
+  {{ partial "page_list.html" . }}
+
 {{ end }}

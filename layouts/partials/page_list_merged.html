@@ -1,0 +1,51 @@
+<!-- This process fills in gaps in a list, if translations     -->
+<!-- are available in one language, but missing from the other -->
+
+<div class="page-list">
+
+  <!-- start with 2 empty arrays: -->
+  {{ $this_lang_pages := slice  }}
+  {{ $other_lang_pages := slice  }}
+
+  <!-- there are 2 sites - one for 'en' and one for 'fr': -->
+  {{ range .Sites }}
+
+    <!-- get the relevant section pages for each site, where           -->
+    <!-- $.Section is the section to which this list.html page belongs -->
+    {{ range where .RegularPages "Section" $.Section }}
+
+      <!-- add the page to the relevant array, where .Language    -->
+      <!-- is the page language; $.Language is the site language: -->
+      {{ if eq .Language $.Language }}
+        {{ $this_lang_pages = $this_lang_pages | append .Page }}
+      {{ else }}
+        {{ $other_lang_pages = $other_lang_pages | append .Page }}
+      {{ end }}
+
+    {{ end }}
+  {{ end }}
+
+  <!-- the .Merge causes missing pages for the current lang  --> 
+  <!-- to be filled in using pages from the other lang. This --> 
+  <!-- assumes the pages having the correct front matter set --> 
+  <!-- up (e.g. translationKey = 'foo'):                     --> 
+  {{ $listing_pages := $this_lang_pages | lang.Merge $other_lang_pages }}
+
+  <!-- now we can generate the list to be displayed:  -->
+  <ul class="ims-listing">
+  {{ range $listing_pages }}
+    <li class="ims-listing-item">
+      <span>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </span>
+      <span class="listing-date"> ({{ .Date | time.Format ":date_medium" }})</span>
+      <!-- add a warning if a page is for the "other" language (i.e. -->
+      <!-- there is no translation available in "this" language):    -->
+      {{ if ne .Language $.Language }}    
+        <span class="no-translation">{{ .Language }}</span>
+      {{ end }}
+    </li>
+  {{ end }}
+  </ul>
+
+</div>
