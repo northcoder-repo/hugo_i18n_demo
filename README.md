@@ -15,3 +15,13 @@ The i18n requirements:
  - if a translation is missing, indicate this to users.
  - showcase some of the built-in features for i18n provided by Hugo.
  - support two basic taxonomies ("category" and "tag").
+
+A couple of screenshots:
+
+_Home page:_
+
+![homepage](hugo_i18n_homepage.png)
+
+_Article listing:_
+
+![listing](hugo_i18n_merged_list.png)
