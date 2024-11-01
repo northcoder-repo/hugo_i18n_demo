@@ -1,5 +1,7 @@
 ### Simple Hugo Website for Internationalization
 
+For more details see the walkthrough at [Hugo Website with Dual Language Support](https://northcoder.com/post/hugo-website-with-dual-language-sup/).
+
 A basic demo using [Hugo](https://gohugo.io/) - the static website generation framework.
 
 In particular this is the simplest possible site I could build to take advantage of Hugo's [i18n](https://gohugo.io/content-management/multilingual/) support.
